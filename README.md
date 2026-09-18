@@ -238,7 +238,88 @@ Los usuarios son almacenados en una base de datos **MySQL**, mientras que PHP ge
 
 Esta estructura permite separar la interfaz, la lógica de negocio y el acceso a los datos, facilitando el mantenimiento y crecimiento de la aplicación.
 
+# 🎧 Techno & EDM Festival
+
+Proyecto web desarrollado para la presentación y promoción de un festival de música electrónica.
+
+El sitio permite consultar la información principal del evento, conocer el lineup de artistas, revisar los horarios de cada escenario, visualizar una galería del festival y consultar los diferentes tipos de boletos disponibles.
+
+## 🛠️ Tecnologías utilizadas
+
+- HTML5
+- CSS3
+- SASS / SCSS
+- JavaScript
+- Diseño Responsive
+- Gulp
+
+## 🚀 Funcionalidades
+
+- Página principal de presentación del festival.
+- Información sobre fecha y ubicación del evento.
+- Navegación entre las diferentes secciones.
+- Lineup organizado por escenario y horario.
+- Programación de artistas Techno y EDM.
+- Galería de imágenes del festival.
+- Sección para consultar boletos.
+- Diferentes tipos de pases y beneficios.
+- Precios de entradas.
+- Diseño visual adaptado a la temática de música electrónica.
+- Interfaz adaptable a diferentes tamaños de pantalla.
+
 ---
+
+## 🏠 Página Principal
+
+La página principal funciona como presentación del festival.
+
+Desde esta sección el usuario puede conocer el nombre del evento, fecha, ubicación y acceder mediante el menú a las diferentes áreas de la página.
+
+También se presenta información general acompañada de contenido visual relacionado con el festival.
+
+![Página Principal](boletos%20%281%29.png)
+
+---
+
+## 🎵 Lineup y Horarios
+
+El sitio cuenta con una sección dedicada a la programación de artistas.
+
+Los DJs se encuentran organizados por escenario y horario, permitiendo consultar fácilmente qué artista se presenta y a qué hora.
+
+El proyecto contempla diferentes escenarios para los géneros **Techno y EDM**, mostrando artistas como parte de la programación del evento.
+
+![Lineup y Horarios](boletos%20%282%29.png)
+
+---
+
+## 📸 Galería y Boletos
+
+La sección de galería permite mostrar diferentes fotografías relacionadas con el ambiente del festival, conciertos, DJs, escenarios y público.
+
+Dentro del mismo sitio se encuentra también el apartado de boletos, donde el usuario puede consultar diferentes opciones de acceso al evento.
+
+Se muestran pases de **1 día y 2 días**, indicando los beneficios incluidos en cada opción y su respectivo precio.
+
+![Galería y Boletos](boletos%20%283%29.png)
+
+---
+
+## 💻 Características del desarrollo
+
+Este proyecto demuestra el desarrollo de una página web orientada a eventos, organizando diferentes tipos de información dentro de una misma interfaz.
+
+Se trabajó la estructura del contenido, navegación, estilos personalizados, distribución de elementos, galerías, tablas de programación y presentación de planes o boletos.
+
+El proyecto también utiliza una estructura de estilos organizada mediante **SASS/SCSS** y herramientas de automatización como **Gulp**.
+
+---
+
+## 👨‍💻 Desarrollador
+
+**Brian Escalante**
+
+Proyecto realizado como parte de mi portafolio de desarrollo web.
 
 ## 🛠️ Tecnologías y herramientas
 
