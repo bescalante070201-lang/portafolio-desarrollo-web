@@ -158,41 +158,85 @@ Este proyecto demuestra el desarrollo de una aplicación web completa, desde la 
 
 ---
 
-### 💈 Sistema de Barbería y Gestión de Citas
+## 💈 Sistema de Barbería y Gestión de Citas
 
-Aplicación web orientada a la administración de servicios y citas de una barbería.
+Aplicación web desarrollada para la administración de usuarios y gestión de citas de una barbería.
 
-**Características:**
-- Creación de cuentas
+El sistema cuenta con registro de usuarios, autenticación mediante correo electrónico y contraseña, recuperación de contraseña y confirmación de cuentas mediante correo electrónico.
+
+La aplicación fue desarrollada utilizando arquitectura MVC, PHP 8 y MySQL, separando la lógica de negocio, las vistas y el acceso a los datos.
+
+### Características principales
+
+- Creación y registro de usuarios
 - Inicio y cierre de sesión
+- Autenticación mediante correo electrónico y contraseña
+- Contraseñas almacenadas de forma segura mediante hash
 - Confirmación de cuentas mediante correo electrónico
-- Recuperación de contraseña
-- Correos electrónicos en HTML
-- Gestión de citas
-- Catálogo de servicios
-- Panel administrativo
-- Administración de usuarios
+- Generación de tokens de confirmación
+- Recuperación y restablecimiento de contraseña
+- Envío de instrucciones mediante correo electrónico
+- Validación de formularios
+- Sistema de alertas y mensajes
 - Base de datos MySQL
+- Arquitectura MVC
+- Diseño responsive
 
-**Tecnologías:**  
-PHP 8 · MySQL · JavaScript · HTML · SCSS · MVC · PHPMailer
+### Tecnologías utilizadas
+
+**PHP 8 · MySQL · HTML5 · SCSS · JavaScript · MVC · Composer · PHPMailer**
 
 ---
 
-### 🛒 Tienda Online
+## 📸 Sistema de usuarios
 
-Proyecto de comercio electrónico para mostrar y administrar productos de ropa y artículos.
+### 🔐 1. Inicio de sesión
 
-**Características:**
-- Catálogo de productos
-- Interfaz responsive
-- Navegación por productos
-- Formularios
-- Gestión de información
-- Diseño orientado a comercio electrónico
+Pantalla principal de autenticación. Los usuarios registrados pueden acceder al sistema utilizando su correo electrónico y contraseña.
 
-**Tecnologías:**  
-HTML · CSS/SCSS · JavaScript · PHP · MySQL
+Desde esta misma interfaz se proporciona acceso al registro de una nueva cuenta y al sistema de recuperación de contraseña.
+
+![Inicio de sesión - Barbería](barberia%20%281%29.png)
+
+---
+
+### 👤 2. Creación de cuenta
+
+Formulario de registro para crear una nueva cuenta proporcionando nombre, apellido, teléfono, correo electrónico y contraseña.
+
+Una vez realizado el registro, el sistema genera la información necesaria para el proceso de confirmación de la cuenta mediante correo electrónico.
+
+![Crear cuenta - Barbería](barberia%20%283%29.png)
+
+---
+
+### 🔑 3. Recuperación de contraseña
+
+Sistema de recuperación de contraseña mediante correo electrónico.
+
+El usuario introduce el correo asociado a su cuenta y el sistema puede enviar las instrucciones necesarias para continuar con el proceso de restablecimiento de contraseña.
+
+![Recuperar contraseña - Barbería](barberia%20%282%29.png)
+
+---
+
+## 📧 Autenticación y correo electrónico
+
+El sistema utiliza **PHPMailer** para gestionar el envío de correos electrónicos relacionados con la autenticación de usuarios.
+
+Durante el registro se genera un token asociado al usuario para realizar la confirmación de la cuenta. El sistema también utiliza tokens para controlar el proceso de recuperación y restablecimiento de contraseña.
+
+Las plantillas enviadas por correo electrónico utilizan HTML para presentar la información al usuario de forma estructurada.
+
+---
+
+## 🧩 Arquitectura del proyecto
+
+La aplicación utiliza una arquitectura **MVC (Modelo - Vista - Controlador)** para mantener organizada la lógica del sistema.
+
+Los usuarios son almacenados en una base de datos **MySQL**, mientras que PHP gestiona procesos como autenticación, validación, creación de cuentas, confirmación mediante token y recuperación de contraseñas.
+
+Esta estructura permite separar la interfaz, la lógica de negocio y el acceso a los datos, facilitando el mantenimiento y crecimiento de la aplicación.
 
 ---
 
